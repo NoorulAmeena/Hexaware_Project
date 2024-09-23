@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>QUESTIFY</h1>
+        </div>
+        <nav class="navbar">
+            <a href="components/product.html">Product</a>
+            <a href="components/user.html">Who it's for</a>
+            <a href="components/usecase.html">Use cases</a>
+            <a href="components/resources.html">Resources</a>
+            <a href="components/lang.html">EN</a>
+            <!-- <a href="components/sign.html" class="sign-in">Sign in</a> -->
+        </nav>
+        <button  href="components/sign.html" class="sign-in">Sign in</button>
+    </header>
+
+    <main class="main-container">
+        <section class="generator-section">
+            <h2>Free Question Generator - QUESTIFY</h2>
+            <p>Ask your audience interesting questions to maximize the engagement</p>
+            
+            <form class="generator-form">
+                <label for="topic">Topic</label>
+                <input type="text" id="topic" maxlength="200" placeholder="Enter your topic here, for example - Time Management">
+                <button type="submit" id="generate-btn">Generate</button>
+            </form>
+        </section>
+
+        <section class="how-it-works">
+            <h3>How it works</h3>
+            <h2>Generate Engaging Questions</h2>
+            <ul>
+                <li><strong>Enter a topic:</strong> Add a topic of your choice in 200 characters on which you want to generate AI questions.</li>
+                <li><strong>Hit the 'Generate' button:</strong> Click on 'Generate' and get instantly developed question outputs.</li>
+                <li><strong>Review the output:</strong> Use the tool to generate questions or tweak them as required.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>For Education</h4>
+                <ul>
+                    <li>Teachers</li>
+                    <li>Schools</li>
+                    <li>Universities</li>
+                    <li>Colleges</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Business Use Cases</h4>
+                <ul>
+                    <li>Recruitment</li>
+                    <li>Training</li>
+                    <li>End Users</li>
+                </ul>
+            </div>
+            <div>
+                <h4>For Business</h4>
+                <ul>
+                    <li>Human Resources</li>
+                    <li>Training Companies</li>
+                    <li>Sales & Customer Service</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Education Use Cases</h4>
+                <ul>
+                    <li>Quizzes</li>
+                    <li>Exams</li>
+                    <li>Homework</li>
+                    <li>End Users</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Questify 2024 | Privacy Policy | Terms and Conditions</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

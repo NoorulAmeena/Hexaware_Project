@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(100px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+.section h2 {
+    text-align: center;
+    color: green;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section ul {
+    list-style-type: none;
+}
+
+.section ul li {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: slideInFromLeft 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+.section ul li:hover {
+    background-color: #f0f9f0;
+    transition: background-color 0.3s ease;
+}
+
+.section ul li:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    font-size: 36px;
+    margin-right: 20px;
+    color: green;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.business {
+    border-left: 5px solid green;
+}
+
+.education {
+    border-left: 5px solid green;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .section {
+        width: 45%;
+        transform: translateY(100px);
+        opacity: 0;
+        animation: slideUp 1s forwards;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
